@@ -1,0 +1,45 @@
+$philpott-font: 'Bungee Shade', cursive;
+$philpott-shadow-color: #000;
+$philpott-logo-color: rgb(221, 190, 16);
+$philpott-text-color: #ffffff;
+
+#index {
+    .jumbotron {
+        background-image: url("../img/philpott-bg.jpg");
+        padding: 5px;
+
+        .img-fluid{
+            margin: 20px;
+        }
+
+        h1{
+            font-family: $philpott-font;
+            font-size: 5.5vw;
+            color: $philpott-logo-color;
+
+            // -webkit-text-stroke: 1px rgb(221, 190, 16);
+            text-shadow: .3vw .5vh $philpott-shadow-color;
+        }
+
+        h2 {
+            font-size: 2.3vw;
+        }
+
+        h3 {
+            font-size: 1.7vw
+        }
+
+        h2, h3 {
+            color: $philpott-text-color;
+            text-shadow: .2vw .3vh $philpott-shadow-color;
+        }
+    }
+}
+
+// class for parallax bg
+.bg-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

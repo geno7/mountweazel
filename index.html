@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Mountweazel | The Official Homepage</title>
+    <title>MOUNTWEAZEL | The Official Homepage</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
@@ -11,9 +11,90 @@
         <!-- Additional CSS must be placed after Bootstrap CSS -->
         <!-- font-awesome -->
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <!-- regular css sheet -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- FONTS -->
+        <!-- bungee shade -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body id="index">
+    <header>
+    <!-- new album jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-parallax">
+        <div class="container-fluid" id="heroContent">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-push-6 text-center">
+                    <h1>Philpott St</h1>
+                    <h2><span class="bg-warning">The new 12-track LP by <span class="text-danger">MOUNTWEAZEL.</span></span></h2>
+                    <h3><span class="bg-info">Available wherever music is streamed.</span></h3>
+                </div>
+
+                <div class=" col-xs-12 col-sm-6 col-push-6">
+                    <img class="img-fluid mx-auto" src="img/philpott-cover.jpg" alt="Philpott St">
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- body of site -->
+    <div class="container-fluid">
+
+        <!-- shop -->
+        <div class="row" id="indexShop">
+            <div class="col-12">
+
+                <div class="text-center">
+                    <h1>SHOP</h1>
+                    <h2>Check out our physical goods.</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- tour dates -->
+        <div class="row" id="indexTourDates">
+            <div class="col-12">
+
+                <div class="text-center">
+                    <h1>TOUR DATES</h1>
+                    <h2>Get tickets to a MOUNTWEAZEL show near you.</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row" id="indexAboutUsAlbums">
+            <div class="col-sm-12 col-md-6">
+                <!-- about us -->
+                <h1>WHO IS MOUNTWEAZEL?</h1>
+                <a href="about.html"><button class="float-right btn-dark">READ ABOUT US</button></a>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <!-- albums -->
+                <h1>CHECK OUT OUR ALBUMS.</h1>
+                <button class="float-right btn-dark">VIEW OUR DISCOGRAPHY</button>
+            </div>
+        </div>
+
+        <div class="row" id="indexContactUs">
+            <div class="col-12 text-center">
+                <h1>INTERESTED IN BOOKING US?</h1>
+                <h2>Or just have questions?</h2>
+                <button class="btn-dark">CONTACT US</button>
+            </div>
+        </div>
+
+        <div class="row" id="indexMailingList">
+            <div class="col-12 text-center">
+                <h1>SUBSCRIBE TO OUR MAILING LIST.</h1>
+                <h2>Get the latest news & updates by email.</h2>
+            </div>
+        </div>
+
+    </div>
+
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
