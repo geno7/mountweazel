@@ -1,45 +1,69 @@
-$philpott-font: 'Bungee Shade', cursive;
+//imports
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$philpott-font: 'Limelight', cursive;
 $philpott-shadow-color: #000;
 $philpott-logo-color: rgb(221, 190, 16);
 $philpott-text-color: #ffffff;
 
+$paragraph-font:'Lexend Deca', sans-serif;
+
+//give a parallax bg to a div
+@mixin parallax-bg($bg-url) {
+    color: white;
+    background-image: $bg-url;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #index {
+
+    font-family: $paragraph-font;
+
+    #heroContent {
+        @include parallax-bg(url('../img/philpott-bg-1.jpg'))
+    }
+
     .jumbotron {
-        background-image: url("../img/philpott-bg.jpg");
-        padding: 5px;
+
+        background-color: transparent;
 
         .img-fluid{
-            margin: 20px;
+            margin: 10px;
         }
 
         h1{
             font-family: $philpott-font;
-            font-size: 5.5vw;
             color: $philpott-logo-color;
 
             // -webkit-text-stroke: 1px rgb(221, 190, 16);
             text-shadow: .3vw .5vh $philpott-shadow-color;
-        }
 
-        h2 {
-            font-size: 2.3vw;
-        }
+            @include media-breakpoint-up(lg) {
+                font-size: 100px;
+            }
 
-        h3 {
-            font-size: 1.7vw
+            @include media-breakpoint-up(xs) {
+                font-size: 60px
+            }
         }
 
         h2, h3 {
             color: $philpott-text-color;
             text-shadow: .2vw .3vh $philpott-shadow-color;
+            font-family: $paragraph-font;
         }
     }
 }
 
-// class for parallax bg
-.bg-parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.drop-shadow {
+        text-shadow: .3vw .5vh $philpott-shadow-color;
+        
+        button {
+            box-shadow: .3vw .5vh $philpott-shadow-color;
+        }
 }

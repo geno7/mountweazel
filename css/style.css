@@ -1,23 +1,30 @@
-#index .jumbotron {
-  background-image: url("../img/philpott-bg.jpg");
-  padding: 5px; }
-  #index .jumbotron .img-fluid {
-    margin: 20px; }
-  #index .jumbotron h1 {
-    font-family: "Bungee Shade", cursive;
-    font-size: 5.5vw;
-    color: #ddbe10;
-    text-shadow: 0.3vw 0.5vh #000; }
-  #index .jumbotron h2 {
-    font-size: 2.3vw; }
-  #index .jumbotron h3 {
-    font-size: 1.7vw; }
-  #index .jumbotron h2, #index .jumbotron h3 {
-    color: #ffffff;
-    text-shadow: 0.2vw 0.3vh #000; }
+#index {
+  font-family: "Lexend Deca", sans-serif; }
+  #index #heroContent {
+    color: white;
+    background-image: url("../img/philpott-bg-1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  #index .jumbotron {
+    background-color: transparent; }
+    #index .jumbotron .img-fluid {
+      margin: 10px; }
+    #index .jumbotron h1 {
+      font-family: "Limelight", cursive;
+      color: #ddbe10;
+      text-shadow: 0.3vw 0.5vh #000;
+      font-size: 60px; }
+      @media (min-width: 992px) {
+        #index .jumbotron h1 {
+          font-size: 100px; } }
+    #index .jumbotron h2, #index .jumbotron h3 {
+      color: #ffffff;
+      text-shadow: 0.2vw 0.3vh #000;
+      font-family: "Lexend Deca", sans-serif; }
 
-.bg-parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.drop-shadow {
+  text-shadow: 0.3vw 0.5vh #000; }
+  .drop-shadow button {
+    box-shadow: 0.3vw 0.5vh #000; }
