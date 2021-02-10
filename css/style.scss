@@ -5,10 +5,18 @@
 
 $philpott-font: 'Limelight', cursive;
 $philpott-shadow-color: #000;
-$philpott-logo-color: rgb(221, 190, 16);
-$philpott-text-color: #ffffff;
 
-$paragraph-font:'Lexend Deca', sans-serif;
+$paragraph-font: 'Lexend Deca', sans-serif;
+$header-font: 'Bungee', cursive;
+
+//colors
+$pal-white: #ffffff;
+$pal-black: #000;
+$pal-color-a: #D1495B;
+$pal-color-b: #EDAE49;
+$pal-color-c: #00798C;
+$pal-color-d: #30638E;
+$pal-color-e: #003D5B;
 
 //give a parallax bg to a div
 @mixin parallax-bg($bg-url) {
@@ -20,50 +28,132 @@ $paragraph-font:'Lexend Deca', sans-serif;
     background-size: cover;
 }
 
-#index {
-
-    font-family: $paragraph-font;
-
-    #heroContent {
-        @include parallax-bg(url('../img/philpott-bg-1.jpg'))
+@mixin drop-shadow($shadow-color) {
+    text-shadow: .3rem .2rem $shadow-color;
+    
+    button {
+        box-shadow: .3rem .3rem $shadow-color;
     }
 
+    img {
+        box-shadow: .3rem .3rem $shadow-color;
+    }
+}
+
+//INDEX PAGE
+#index {
+
+    //STYLE HEADERS
+    h1 {
+        font-family: $header-font;
+        color: $pal-color-b;
+        @include drop-shadow($pal-color-e);
+
+        font-size: 70px;
+    }
+    //STYLE PARAGRAPHS
+    font-family: $paragraph-font;
+    color: $pal-white;
+    //STYLE BACKGROUND
+    background-color: $pal-color-a; 
+    
+    //style hero
+    #heroContent {
+        @include parallax-bg(url('../img/philpott-bg-1.jpg'));
+        background-blend-mode: multiply;
+        background-color:$pal-color-c;
+    }
+
+    //style philpott jumbotron
     .jumbotron {
 
         background-color: transparent;
 
         .img-fluid{
             margin: 10px;
+            @include drop-shadow($pal-color-a);
         }
 
         h1{
             font-family: $philpott-font;
-            color: $philpott-logo-color;
+            color: $pal-color-b;
 
             // -webkit-text-stroke: 1px rgb(221, 190, 16);
-            text-shadow: .3vw .5vh $philpott-shadow-color;
+            @include drop-shadow($pal-color-a);
 
             @include media-breakpoint-up(lg) {
                 font-size: 100px;
             }
 
             @include media-breakpoint-up(xs) {
-                font-size: 60px
+                font-size: 60px;
             }
         }
 
         h2, h3 {
-            color: $philpott-text-color;
-            text-shadow: .2vw .3vh $philpott-shadow-color;
+            color: $pal-white;
+            @include drop-shadow($pal-color-e);
             font-family: $paragraph-font;
+
+            span {
+                color: $pal-color-a;
+            }
+        }
+
+        #philpottCover {
+            @include drop-shadow($pal-color-a);
+
+        }
+    }
+
+    #indexShop {
+        //STYLE HEADERS
+        h1 {
+            font-family: $header-font;
+            color: $pal-color-a;
+            @include drop-shadow($pal-color-e);
+
+            font-size: 70px;
+        }
+        //STYLE PARAGRAPHS
+        font-family: $paragraph-font;
+        color: $pal-color-e;
+        //STYLE BACKGROUND
+        background-color: $pal-color-b; 
+    }
+
+    #indexTourDates {
+        //style background
+        @include parallax-bg(url('../img/tour-dates-bg-1.jpg'));
+        background-blend-mode: multiply;
+        background-color:$pal-color-a;
+
+        .table {
+            font-family: $paragraph-font;
+            color: $pal-white;
+            font-size: 15px;
         }
     }
 }
 
-.drop-shadow {
-        text-shadow: .3vw .5vh $philpott-shadow-color;
-        
-        button {
-            box-shadow: .3vw .5vh $philpott-shadow-color;
-        }
+.albumStreamLinks {
+    a {
+        color: $pal-white;
+    }
+
+    a:hover {
+        color: $pal-color-a;
+    }
+
+    button {
+        color:$pal-color-e;
+    }
+
+    button:hover {
+        background-color: $pal-color-a;
+        border-color:$pal-color-a;
+        color:$pal-color-e;
+    }
+
+    @include drop-shadow($pal-color-e);
 }
