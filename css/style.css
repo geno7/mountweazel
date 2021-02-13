@@ -1,16 +1,19 @@
 #index {
   font-family: "Lexend Deca", sans-serif;
   color: #ffffff;
-  background-color: #D1495B; }
+  background-color: #000; }
   #index h1 {
-    font-family: "Bungee", cursive;
+    font-family: "Righteous", cursive;
     color: #EDAE49;
     text-shadow: 0.3rem 0.2rem #003D5B;
-    font-size: 70px; }
+    font-size: 60px; }
     #index h1 button {
       box-shadow: 0.3rem 0.3rem #003D5B; }
     #index h1 img {
       box-shadow: 0.3rem 0.3rem #003D5B; }
+    @media (min-width: 992px) {
+      #index h1 {
+        font-size: 100px; } }
   #index #heroContent {
     color: white;
     background-image: url("../img/philpott-bg-1.jpg");
@@ -21,7 +24,9 @@
     background-blend-mode: multiply;
     background-color: #00798C; }
   #index .jumbotron {
-    background-color: transparent; }
+    background-color: transparent;
+    margin: 0;
+    padding: 10px; }
     #index .jumbotron .img-fluid {
       margin: 10px;
       text-shadow: 0.3rem 0.2rem #D1495B; }
@@ -58,14 +63,14 @@
       #index .jumbotron #philpottCover img {
         box-shadow: 0.3rem 0.3rem #D1495B; }
   #index #indexShop {
+    padding: 0px;
     font-family: "Lexend Deca", sans-serif;
     color: #003D5B;
     background-color: #EDAE49; }
     #index #indexShop h1 {
-      font-family: "Bungee", cursive;
+      font-family: "Righteous", cursive;
       color: #D1495B;
-      text-shadow: 0.3rem 0.2rem #003D5B;
-      font-size: 70px; }
+      text-shadow: 0.3rem 0.2rem #003D5B; }
       #index #indexShop h1 button {
         box-shadow: 0.3rem 0.3rem #003D5B; }
       #index #indexShop h1 img {
@@ -83,6 +88,144 @@
       font-family: "Lexend Deca", sans-serif;
       color: #ffffff;
       font-size: 15px; }
+  #index #indexAboutUsAlbums h1 {
+    font-size: 50px; }
+    @media (min-width: 992px) {
+      #index #indexAboutUsAlbums h1 {
+        font-size: 100px; } }
+    @media (min-width: 576px) {
+      #index #indexAboutUsAlbums h1 {
+        font-size: 75px; } }
+  #index #indexAboutUsAlbums #indexAboutUs {
+    color: white;
+    background-image: url("../img/index-aboutus-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #00798C;
+    text-shadow: 0.3rem 0.2rem #003D5B; }
+    #index #indexAboutUsAlbums #indexAboutUs button {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+    #index #indexAboutUsAlbums #indexAboutUs img {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+    #index #indexAboutUsAlbums #indexAboutUs h1 {
+      color: #D1495B;
+      text-shadow: 0.3rem 0.2rem #003D5B; }
+      #index #indexAboutUsAlbums #indexAboutUs h1 button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #index #indexAboutUsAlbums #indexAboutUs h1 img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+    #index #indexAboutUsAlbums #indexAboutUs button {
+      background-color: #D1495B;
+      border-color: #D1495B;
+      color: #003D5B; }
+    #index #indexAboutUsAlbums #indexAboutUs button:hover {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      color: #D1495B; }
+  #index #indexAboutUsAlbums #indexAlbums {
+    color: white;
+    background-image: url("../img/index-albums-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #EDAE49;
+    text-shadow: 0.3rem 0.2rem #EDAE49; }
+    #index #indexAboutUsAlbums #indexAlbums button {
+      box-shadow: 0.3rem 0.3rem #EDAE49; }
+    #index #indexAboutUsAlbums #indexAlbums img {
+      box-shadow: 0.3rem 0.3rem #EDAE49; }
+    #index #indexAboutUsAlbums #indexAlbums h1 {
+      color: #00798C;
+      text-shadow: 0.3rem 0.2rem #EDAE49; }
+      #index #indexAboutUsAlbums #indexAlbums h1 button {
+        box-shadow: 0.3rem 0.3rem #EDAE49; }
+      #index #indexAboutUsAlbums #indexAlbums h1 img {
+        box-shadow: 0.3rem 0.3rem #EDAE49; }
+    #index #indexAboutUsAlbums #indexAlbums button {
+      background-color: #00798C;
+      border-color: #00798C;
+      color: #EDAE49; }
+    #index #indexAboutUsAlbums #indexAlbums button:hover {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      color: #003D5B; }
+  #index #indexContactUs {
+    color: white;
+    background-image: url("../img/index-contactus-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #D1495B;
+    padding: 10px;
+    text-shadow: 0.3rem 0.2rem #EDAE49; }
+    #index #indexContactUs h1 {
+      color: #EDAE49;
+      text-shadow: 0.3rem 0.2rem #003D5B; }
+      #index #indexContactUs h1 button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #index #indexContactUs h1 img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+    #index #indexContactUs button {
+      box-shadow: 0.3rem 0.3rem #EDAE49; }
+    #index #indexContactUs img {
+      box-shadow: 0.3rem 0.3rem #EDAE49; }
+    #index #indexContactUs h2 {
+      text-shadow: 0.3rem 0.2rem transparent; }
+      #index #indexContactUs h2 button {
+        box-shadow: 0.3rem 0.3rem transparent; }
+      #index #indexContactUs h2 img {
+        box-shadow: 0.3rem 0.3rem transparent; }
+    #index #indexContactUs button {
+      background-color: #00798C;
+      border-color: #00798C;
+      color: #EDAE49; }
+    #index #indexContactUs button:hover {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      color: #003D5B; }
+  #index #indexMailingList {
+    color: white;
+    background-image: url("../img/index-mailinglist-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #003D5B;
+    padding: 10px;
+    text-shadow: 0.3rem 0.2rem #EDAE49; }
+    #index #indexMailingList h1 {
+      color: #D1495B;
+      text-shadow: 0.3rem 0.2rem #EDAE49; }
+      #index #indexMailingList h1 button {
+        box-shadow: 0.3rem 0.3rem #EDAE49; }
+      #index #indexMailingList h1 img {
+        box-shadow: 0.3rem 0.3rem #EDAE49; }
+    #index #indexMailingList button {
+      box-shadow: 0.3rem 0.3rem #EDAE49; }
+    #index #indexMailingList img {
+      box-shadow: 0.3rem 0.3rem #EDAE49; }
+    #index #indexMailingList h2 {
+      text-shadow: 0.3rem 0.2rem transparent; }
+      #index #indexMailingList h2 button {
+        box-shadow: 0.3rem 0.3rem transparent; }
+      #index #indexMailingList h2 img {
+        box-shadow: 0.3rem 0.3rem transparent; }
+    #index #indexMailingList button {
+      background-color: #D1495B;
+      border-color: #D1495B;
+      color: #EDAE49; }
+    #index #indexMailingList button:hover {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      color: #003D5B; }
 
 .albumStreamLinks {
   text-shadow: 0.3rem 0.2rem #003D5B; }

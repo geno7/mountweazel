@@ -7,7 +7,7 @@ $philpott-font: 'Limelight', cursive;
 $philpott-shadow-color: #000;
 
 $paragraph-font: 'Lexend Deca', sans-serif;
-$header-font: 'Bungee', cursive;
+$header-font: 'Righteous', cursive;
 
 //colors
 $pal-white: #ffffff;
@@ -28,6 +28,7 @@ $pal-color-e: #003D5B;
     background-size: cover;
 }
 
+//drop shadow
 @mixin drop-shadow($shadow-color) {
     text-shadow: .3rem .2rem $shadow-color;
     
@@ -43,19 +44,26 @@ $pal-color-e: #003D5B;
 //INDEX PAGE
 #index {
 
-    //STYLE HEADERS
+    //STYLE HEADERS (default)
     h1 {
         font-family: $header-font;
         color: $pal-color-b;
+
         @include drop-shadow($pal-color-e);
 
-        font-size: 70px;
+        @include media-breakpoint-up(lg) {
+            font-size: 100px;
+        }
+
+        @include media-breakpoint-up(xs) {
+            font-size: 60px;
+        }
     }
-    //STYLE PARAGRAPHS
+    //STYLE PARAGRAPHS (default)
     font-family: $paragraph-font;
     color: $pal-white;
-    //STYLE BACKGROUND
-    background-color: $pal-color-a; 
+    //STYLE BACKGROUND (default)
+    background-color: $pal-black; 
     
     //style hero
     #heroContent {
@@ -68,6 +76,8 @@ $pal-color-e: #003D5B;
     .jumbotron {
 
         background-color: transparent;
+        margin: 0;
+        padding: 10px;
 
         .img-fluid{
             margin: 10px;
@@ -107,14 +117,15 @@ $pal-color-e: #003D5B;
     }
 
     #indexShop {
+        
+        padding: 0px;
         //STYLE HEADERS
         h1 {
             font-family: $header-font;
             color: $pal-color-a;
             @include drop-shadow($pal-color-e);
-
-            font-size: 70px;
         }
+        
         //STYLE PARAGRAPHS
         font-family: $paragraph-font;
         color: $pal-color-e;
@@ -132,6 +143,146 @@ $pal-color-e: #003D5B;
             font-family: $paragraph-font;
             color: $pal-white;
             font-size: 15px;
+        }
+    }
+
+    //style about us/albums cards
+    #indexAboutUsAlbums {
+
+        //both
+        h1{
+            @include media-breakpoint-up(lg) {
+                font-size: 100px;
+            }
+
+            @include media-breakpoint-up(sm) {
+                font-size: 75px;
+            }
+
+            @include media-breakpoint-up(xs) {
+                font-size: 50px;
+            }
+        }
+
+        //about us
+        #indexAboutUs {
+            @include parallax-bg(url('../img/index-aboutus-bg.jpg'));
+            background-blend-mode: multiply;
+            background-color: $pal-color-c;
+
+            @include drop-shadow($pal-color-e);
+
+            h1 {
+                color: $pal-color-a;
+                @include drop-shadow($pal-color-e);
+            }
+
+            button {
+                background-color: $pal-color-a;
+                border-color:$pal-color-a;
+                color:$pal-color-e;
+            }
+        
+            button:hover {
+                background-color: $pal-white;
+                border-color:$pal-white;
+                color:$pal-color-a;
+            }
+        }
+
+        //albums
+        #indexAlbums {
+            @include parallax-bg(url('../img/index-albums-bg.jpg'));
+            background-blend-mode: multiply;
+            background-color: $pal-color-b;
+
+            @include drop-shadow($pal-color-b);
+
+            h1 {
+                color: $pal-color-c;
+                @include drop-shadow($pal-color-b);
+            }
+
+            button {
+                background-color: $pal-color-c;
+                border-color:$pal-color-c;
+                color:$pal-color-b;
+                
+            }
+        
+            button:hover {
+                background-color: $pal-white;
+                border-color:$pal-white;
+                color:$pal-color-e;
+            }
+
+        }
+    }
+
+    //mailing list
+    #indexContactUs {
+        @include parallax-bg(url('../img/index-contactus-bg.jpg'));
+        background-blend-mode: multiply;
+        background-color: $pal-color-a;
+
+        padding: 10px;
+
+        h1 {
+            color: $pal-color-b;
+            @include drop-shadow($pal-color-e);
+        }
+
+        //button drop shadow
+        @include drop-shadow($pal-color-b);
+
+        //take drop shadow off white text
+        h2 {
+            @include drop-shadow(transparent);
+        }
+
+        button {
+            background-color: $pal-color-c;
+            border-color:$pal-color-c;
+            color:$pal-color-b;
+        }
+    
+        button:hover {
+            background-color: $pal-white;
+            border-color:$pal-white;
+            color:$pal-color-e;
+        }
+    }
+
+    #indexMailingList {
+        @include parallax-bg(url('../img/index-mailinglist-bg.jpg'));
+        background-blend-mode: multiply;
+        background-color: $pal-color-e;
+
+        padding: 10px;
+
+        h1 {
+            color: $pal-color-a;
+            @include drop-shadow($pal-color-b);
+        }
+
+        //button drop shadow
+        @include drop-shadow($pal-color-b);
+
+        //take drop shadow off white text
+        h2 {
+            @include drop-shadow(transparent);
+        }
+
+        button {
+            background-color: $pal-color-a;
+            border-color:$pal-color-a;
+            color:$pal-color-b;
+        }
+    
+        button:hover {
+            background-color: $pal-white;
+            border-color:$pal-white;
+            color:$pal-color-e;
         }
     }
 }
