@@ -59,6 +59,7 @@ $pal-color-e: #003D5B;
             font-size: 60px;
         }
     }
+
     //STYLE PARAGRAPHS (default)
     font-family: $paragraph-font;
     color: $pal-white;
@@ -131,6 +132,26 @@ $pal-color-e: #003D5B;
         color: $pal-color-e;
         //STYLE BACKGROUND
         background-color: $pal-color-b; 
+    }
+
+    #shopCards {
+        padding: 10px;
+
+
+        .card-body {
+            background-color:$pal-color-e;
+            color: $pal-color-b;
+        }
+
+        .card {
+            border-color: $pal-color-e;
+        }
+
+        .btn-primary {
+            border-color: $pal-color-b;
+            background: $pal-color-b;
+            color: $pal-color-e;
+        }
     }
 
     #indexTourDates {
@@ -219,7 +240,7 @@ $pal-color-e: #003D5B;
         }
     }
 
-    //mailing list
+    //contact us
     #indexContactUs {
         @include parallax-bg(url('../img/index-contactus-bg.jpg'));
         background-blend-mode: multiply;
@@ -252,7 +273,7 @@ $pal-color-e: #003D5B;
             color:$pal-color-e;
         }
     }
-
+    //mailing list
     #indexMailingList {
         @include parallax-bg(url('../img/index-mailinglist-bg.jpg'));
         background-blend-mode: multiply;

@@ -75,6 +75,17 @@
         box-shadow: 0.3rem 0.3rem #003D5B; }
       #index #indexShop h1 img {
         box-shadow: 0.3rem 0.3rem #003D5B; }
+  #index #shopCards {
+    padding: 10px; }
+    #index #shopCards .card-body {
+      background-color: #003D5B;
+      color: #EDAE49; }
+    #index #shopCards .card {
+      border-color: #003D5B; }
+    #index #shopCards .btn-primary {
+      border-color: #EDAE49;
+      background: #EDAE49;
+      color: #003D5B; }
   #index #indexTourDates {
     color: white;
     background-image: url("../img/tour-dates-bg-1.jpg");
