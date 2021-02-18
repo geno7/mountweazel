@@ -13,6 +13,11 @@
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <!-- regular css sheet -->
         <link rel="stylesheet" href="css/style.css" />
+        <!-- bootstrap select country -->
+        <link rel="stylesheet" href="node_modules/bootstrap-select-country/dist/css/bootstrap-select-country.min.css"/>
+        <!-- make bootstrap-country-select work with 4 -->
+        <link rel="stylesheet" href="css/select-country-fixer.css">
+
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <!-- limelight -->
@@ -25,6 +30,54 @@
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body id="index">
+
+    <!-- modal for signing up for the mailing list -->
+    <div id="mailingListModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center">SUBSCRIBE TO OUR MAILING LIST</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email Address</label>
+                                    <input type="email" class="form-control form-control-lg" id="loginEmail" placeholder="EMAIL ADDRESS">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label class="sr-only" for="fName">First Name</label>
+                                    <input type="password" class="form-control form-control-lg" id="fName" name="fName" placeholder="FIRST NAME">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label class="sr-only" for="lName">Last Name</label>
+                                    <input type="password" class="form-control form-control-lg" id="lName" name="lName" placeholder="LAST NAME">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="town">Town</label>
+                                    <input type="text" class="form-control form-control-lg" id="town" placeholder="TOWN">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="country">Country</label>
+                                    <select class="selectpicker countrypicker form-control form-control-lg" data-flag="true" placeholder="COUNTRY"></select>
+                                    <script>
+                                        $('.countrypicker').countrypicker();
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="form-row" id="rowButtons">
+                                <button type="button" class="btn btn-lg ml-auto" data-dismiss="modal" id="cancelBtn">Cancel</button>
+                                <button type="submit" class="btn btn-lg ml-2" id="signUpBtn">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="container-fluid" id="heroContent">
     <!-- new album jumbotron/hero -->
         <div class="jumbotron jumbotron-fluid">
@@ -188,7 +241,7 @@
             <div class="col-12 text-center">
                 <h1>SUBSCRIBE TO OUR MAILING LIST.</h1>
                 <h2>Get the latest news & updates by email.</h2>
-                <a href="#" id="mailButton"><button type="button" class="btn btn-lg btn-dark">SIGN UP</button></a>
+                <button type="button" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#mailingListModal">SIGN UP</button>
             </div>
         </div>
 
@@ -198,6 +251,7 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+<script src="node_modules/bootstrap-select-country/dist/js/bootstrap-select-country.min.js"></script>
 
 </body>
 </html>

@@ -41,6 +41,42 @@ $pal-color-e: #003D5B;
     }
 }
 
+//MAILING LIST MODAL (on every page)
+#mailingListModal {
+    .modal-header {
+        background-color: $pal-color-e;
+        font-family: $header-font;
+        color:$pal-color-a;
+        padding: 2px;
+        .modal-title {
+            text-shadow: 0.07em 0.07em  $pal-color-b;
+            font-size: 40px;
+        }
+    }
+    .modal-body {
+        background-color: $pal-color-e;
+        color: $pal-color-a;
+    }
+
+    //row with cancel and sign up buttons
+    #rowButtons {
+
+        //add drop shadow to both buttons
+        @include drop-shadow($pal-color-b);
+            
+        
+        button:hover {
+                background-color: $pal-white;
+                color:$pal-color-b;
+            }
+
+        button {
+            background-color:$pal-color-a;
+            color:$pal-color-b;
+        }
+    }
+}
+
 //INDEX PAGE
 #index {
 

@@ -1,3 +1,29 @@
+#mailingListModal .modal-header {
+  background-color: #003D5B;
+  font-family: "Righteous", cursive;
+  color: #D1495B;
+  padding: 2px; }
+  #mailingListModal .modal-header .modal-title {
+    text-shadow: 0.07em 0.07em #EDAE49;
+    font-size: 40px; }
+
+#mailingListModal .modal-body {
+  background-color: #003D5B;
+  color: #D1495B; }
+
+#mailingListModal #rowButtons {
+  text-shadow: 0.3rem 0.2rem #EDAE49; }
+  #mailingListModal #rowButtons button {
+    box-shadow: 0.3rem 0.3rem #EDAE49; }
+  #mailingListModal #rowButtons img {
+    box-shadow: 0.3rem 0.3rem #EDAE49; }
+  #mailingListModal #rowButtons button:hover {
+    background-color: #ffffff;
+    color: #EDAE49; }
+  #mailingListModal #rowButtons button {
+    background-color: #D1495B;
+    color: #EDAE49; }
+
 #index {
   font-family: "Lexend Deca", sans-serif;
   color: #ffffff;
