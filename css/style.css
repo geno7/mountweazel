@@ -1,5 +1,22 @@
 .navbar {
   background-color: #000; }
+  .navbar .navbar-nav {
+    color: #ffffff; }
+
+body {
+  padding-top: 65px; }
+
+.site-footer {
+  background-color: #000;
+  color: #ffffff;
+  padding: 20px; }
+  .site-footer a {
+    color: #D1495B; }
+  .site-footer a:hover {
+    color: #ffffff; }
+  .site-footer p {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 12px; }
 
 #mailingListModal .modal-header {
   background-color: #003D5B;
@@ -204,6 +221,7 @@
     background-blend-mode: multiply;
     background-color: #D1495B;
     padding: 10px;
+    padding-bottom: 20px;
     text-shadow: 0.3rem 0.2rem #EDAE49; }
     #index #indexContactUs h1 {
       color: #EDAE49;
@@ -240,6 +258,7 @@
     background-blend-mode: multiply;
     background-color: #003D5B;
     padding: 10px;
+    padding-bottom: 20px;
     text-shadow: 0.3rem 0.2rem #EDAE49; }
     #index #indexMailingList h1 {
       color: #D1495B;

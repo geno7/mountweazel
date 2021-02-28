@@ -44,6 +44,36 @@ $pal-color-e: #003D5B;
 //NAVBAR
 .navbar {
     background-color: $pal-black;
+
+    .navbar-nav {
+        color: $pal-white;
+    }
+
+}
+
+//PADDING FOR NAVBAR & FOOTER
+body { 
+    padding-top: 65px; 
+}
+
+//FOOTER
+.site-footer {
+    background-color: $pal-black;
+    color: $pal-white;
+    padding: 20px;
+
+    a {
+        color: $pal-color-a;
+    }
+
+    a:hover {
+        color: $pal-white;
+    }
+
+    p {
+        font-family: $paragraph-font;
+        font-size: 12px;
+    }
 }
 
 //MAILING LIST MODAL (on every page)
@@ -288,6 +318,7 @@ $pal-color-e: #003D5B;
         background-color: $pal-color-a;
 
         padding: 10px;
+        padding-bottom: 20px;
 
         h1 {
             color: $pal-color-b;
@@ -321,6 +352,7 @@ $pal-color-e: #003D5B;
         background-color: $pal-color-e;
 
         padding: 10px;
+        padding-bottom: 20px;
 
         h1 {
             color: $pal-color-a;
@@ -348,6 +380,11 @@ $pal-color-e: #003D5B;
         }
     }
 }
+
+//MERCH PAGE
+// #merch {
+
+// }
 
 .albumStreamLinks {
     a {
