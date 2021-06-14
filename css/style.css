@@ -286,6 +286,160 @@ body {
       border-color: #ffffff;
       color: #003D5B; }
 
+#about {
+  font-family: "Lexend Deca", sans-serif;
+  color: #ffffff;
+  color: white;
+  background-image: url("../img/index-aboutus-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #ffffff; }
+  #about h1 {
+    font-family: "Righteous", cursive;
+    color: #EDAE49;
+    text-shadow: 0.3rem 0.2rem #003D5B;
+    font-size: 60px; }
+    #about h1 button {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+    #about h1 img {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+    @media (min-width: 992px) {
+      #about h1 {
+        font-size: 100px; } }
+  #about .row:not(#knowMore) {
+    margin: 25px;
+    border-radius: 20px; }
+    #about .row:not(#knowMore) img {
+      margin-top: 10px; }
+  #about #aboutHeader {
+    background-color: #00798C; }
+    #about #aboutHeader h1 {
+      color: #D1495B;
+      text-shadow: 0.3rem 0.2rem #003D5B; }
+      #about #aboutHeader h1 button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #about #aboutHeader h1 img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+  #about #rickSteinlaus {
+    background-color: #EDAE49; }
+    #about #rickSteinlaus .profile-pic {
+      text-shadow: 0.3rem 0.2rem #003D5B; }
+      #about #rickSteinlaus .profile-pic button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #about #rickSteinlaus .profile-pic img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+    #about #rickSteinlaus h1 {
+      color: #00798C;
+      text-shadow: 0.3rem 0.2rem #003D5B; }
+      #about #rickSteinlaus h1 button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #about #rickSteinlaus h1 img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+  #about #martinGoblu {
+    background-color: #D1495B; }
+    #about #martinGoblu .profile-pic {
+      text-shadow: 0.3rem 0.2rem #EDAE49; }
+      #about #martinGoblu .profile-pic button {
+        box-shadow: 0.3rem 0.3rem #EDAE49; }
+      #about #martinGoblu .profile-pic img {
+        box-shadow: 0.3rem 0.3rem #EDAE49; }
+    #about #martinGoblu h1 {
+      color: #30638E;
+      text-shadow: 0.3rem 0.2rem #EDAE49; }
+      #about #martinGoblu h1 button {
+        box-shadow: 0.3rem 0.3rem #EDAE49; }
+      #about #martinGoblu h1 img {
+        box-shadow: 0.3rem 0.3rem #EDAE49; }
+  #about #daisyBibfeldt {
+    background-color: #003D5B; }
+    #about #daisyBibfeldt .profile-pic {
+      text-shadow: 0.3rem 0.2rem #D1495B; }
+      #about #daisyBibfeldt .profile-pic button {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+      #about #daisyBibfeldt .profile-pic img {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+    #about #daisyBibfeldt h1 {
+      color: #EDAE49;
+      text-shadow: 0.3rem 0.2rem #D1495B; }
+      #about #daisyBibfeldt h1 button {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+      #about #daisyBibfeldt h1 img {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+  #about #nickHenrion {
+    background-color: #00798C; }
+    #about #nickHenrion .profile-pic {
+      text-shadow: 0.3rem 0.2rem #D1495B; }
+      #about #nickHenrion .profile-pic button {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+      #about #nickHenrion .profile-pic img {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+    #about #nickHenrion h1 {
+      color: #30638E;
+      text-shadow: 0.3rem 0.2rem #003D5B; }
+      #about #nickHenrion h1 button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #about #nickHenrion h1 img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+  #about #knowMore {
+    color: white;
+    background-image: url("../img/index-albums-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #EDAE49; }
+    #about #knowMore h1 {
+      color: #00798C;
+      text-shadow: 0.3rem 0.2rem #EDAE49; }
+      #about #knowMore h1 button {
+        box-shadow: 0.3rem 0.3rem #EDAE49; }
+      #about #knowMore h1 img {
+        box-shadow: 0.3rem 0.3rem #EDAE49; }
+    #about #knowMore button {
+      background-color: #00798C;
+      border-color: #00798C;
+      color: #EDAE49; }
+    #about #knowMore button:hover {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      color: #003D5B; }
+    #about #knowMore #knowMoreButton {
+      margin-bottom: 12px; }
+      #about #knowMore #knowMoreButton :not(h3):not(button) {
+        text-shadow: 0.3rem 0.2rem #EDAE49; }
+        #about #knowMore #knowMoreButton :not(h3):not(button) button {
+          box-shadow: 0.3rem 0.3rem #EDAE49; }
+        #about #knowMore #knowMoreButton :not(h3):not(button) img {
+          box-shadow: 0.3rem 0.3rem #EDAE49; }
+
+#contact {
+  font-family: "Lexend Deca", sans-serif;
+  color: #ffffff;
+  color: white;
+  background-image: url("../img/index-aboutus-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #ffffff; }
+  #contact h1 {
+    font-family: "Righteous", cursive;
+    color: #EDAE49;
+    text-shadow: 0.3rem 0.2rem #003D5B;
+    font-size: 60px; }
+    #contact h1 button {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+    #contact h1 img {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+    @media (min-width: 992px) {
+      #contact h1 {
+        font-size: 100px; } }
+
 .albumStreamLinks {
   text-shadow: 0.3rem 0.2rem #003D5B; }
   .albumStreamLinks a {

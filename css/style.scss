@@ -381,10 +381,165 @@ body {
     }
 }
 
-//MERCH PAGE
-// #merch {
+//ABOUT PAGE
+#about {
 
-// }
+        //STYLE HEADERS (default)
+    h1 {
+        font-family: $header-font;
+        color: $pal-color-b;
+
+        @include drop-shadow($pal-color-e);
+
+        @include media-breakpoint-up(lg) {
+            font-size: 100px;
+        }
+
+        @include media-breakpoint-up(xs) {
+            font-size: 60px;
+        }
+    }
+
+    //STYLE PARAGRAPHS (default)
+    font-family: $paragraph-font;
+    color: $pal-white;
+
+    //background
+    @include parallax-bg(url('../img/index-aboutus-bg.jpg'));
+        background-blend-mode: multiply;
+        background-color:$pal-white;
+
+    //OPENING PARAGRAPH
+
+    .row:not(#knowMore) {
+        margin: 25px;
+        border-radius: 20px;
+
+        img {
+            margin-top: 10px;
+        }
+    }
+
+    #aboutHeader {
+        background-color: $pal-color-c;
+
+            h1 {
+                color: $pal-color-a;
+                @include drop-shadow($pal-color-e);
+            }
+    }
+
+    //INDIVIDUAL BAND MEMBERS
+    #rickSteinlaus {
+        background-color: $pal-color-b;
+
+            .profile-pic {
+                @include drop-shadow($pal-color-e);
+            }
+
+            h1 {
+                color: $pal-color-c;
+                @include drop-shadow($pal-color-e);
+            }
+    }
+
+    #martinGoblu {
+        background-color: $pal-color-a;
+
+            .profile-pic {
+                @include drop-shadow($pal-color-b);
+            }
+
+            h1 {
+                color: $pal-color-d;
+                @include drop-shadow($pal-color-b);
+            }
+    }
+
+    #daisyBibfeldt {
+        background-color: $pal-color-e;
+
+            .profile-pic {
+                @include drop-shadow($pal-color-a);
+            }
+
+            h1 {
+                color: $pal-color-b;
+                @include drop-shadow($pal-color-a);
+            }
+    }
+
+    #nickHenrion {
+        background-color: $pal-color-c;
+
+            .profile-pic {
+                @include drop-shadow($pal-color-a);
+            }
+
+            h1 {
+                color: $pal-color-d;
+                @include drop-shadow($pal-color-e);
+            }
+    }
+
+    //end tag thing
+    #knowMore {
+        @include parallax-bg(url('../img/index-albums-bg.jpg'));
+            background-blend-mode: multiply;
+            background-color: $pal-color-b;
+
+            h1 {
+                color: $pal-color-c;
+                @include drop-shadow($pal-color-b);
+            }
+
+            button {
+                background-color: $pal-color-c;
+                border-color:$pal-color-c;
+                color:$pal-color-b;
+                
+            }
+        
+            button:hover {
+                background-color: $pal-white;
+                border-color:$pal-white;
+                color:$pal-color-e;
+            }
+
+        #knowMoreButton {
+            margin-bottom: 12px;
+            :not(h3):not(button) {@include drop-shadow($pal-color-b);}
+        }
+    }
+}
+
+//CONTACT PAGE
+#contact {
+        //STYLE HEADERS (default)
+    h1 {
+        font-family: $header-font;
+        color: $pal-color-b;
+
+        @include drop-shadow($pal-color-e);
+
+        @include media-breakpoint-up(lg) {
+            font-size: 100px;
+        }
+
+        @include media-breakpoint-up(xs) {
+            font-size: 60px;
+        }
+    }
+
+    //STYLE PARAGRAPHS (default)
+    font-family: $paragraph-font;
+    color: $pal-white;
+
+    //background
+    @include parallax-bg(url('../img/index-aboutus-bg.jpg'));
+        background-blend-mode: multiply;
+        background-color:$pal-white;
+}
 
 .albumStreamLinks {
     a {
