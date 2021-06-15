@@ -420,7 +420,7 @@ body {
   font-family: "Lexend Deca", sans-serif;
   color: #ffffff;
   color: white;
-  background-image: url("../img/index-aboutus-bg.jpg");
+  background-image: url("../img/index-contactus-bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -439,6 +439,48 @@ body {
     @media (min-width: 992px) {
       #contact h1 {
         font-size: 100px; } }
+  #contact h3 {
+    color: #ffffff;
+    text-shadow: 0.3rem 0.2rem #000; }
+    #contact h3 button {
+      box-shadow: 0.3rem 0.3rem #000; }
+    #contact h3 img {
+      box-shadow: 0.3rem 0.3rem #000; }
+  @media (max-width: 767.98px) {
+    #contact #contactContent {
+      margin-bottom: 15em; } }
+  #contact #contactManage {
+    font-family: "Righteous", cursive;
+    color: #D1495B;
+    text-shadow: 0.3rem 0.2rem #003D5B; }
+    #contact #contactManage button {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+    #contact #contactManage img {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+  #contact #contactPress {
+    font-family: "Righteous", cursive;
+    color: #003D5B;
+    text-shadow: 0.3rem 0.2rem #00798C; }
+    #contact #contactPress button {
+      box-shadow: 0.3rem 0.3rem #00798C; }
+    #contact #contactPress img {
+      box-shadow: 0.3rem 0.3rem #00798C; }
+  #contact #contactBooking {
+    font-family: "Righteous", cursive;
+    color: #EDAE49;
+    text-shadow: 0.3rem 0.2rem #003D5B; }
+    #contact #contactBooking button {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+    #contact #contactBooking img {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+  #contact #contactMerchQ {
+    font-family: "Righteous", cursive;
+    color: #003D5B;
+    text-shadow: 0.3rem 0.2rem #D1495B; }
+    #contact #contactMerchQ button {
+      box-shadow: 0.3rem 0.3rem #D1495B; }
+    #contact #contactMerchQ img {
+      box-shadow: 0.3rem 0.3rem #D1495B; }
 
 .albumStreamLinks {
   text-shadow: 0.3rem 0.2rem #003D5B; }

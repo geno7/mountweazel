@@ -531,14 +531,51 @@ body {
         }
     }
 
+    h3 {
+            color: $pal-white;
+            @include drop-shadow($pal-black);
+        }
+
     //STYLE PARAGRAPHS (default)
     font-family: $paragraph-font;
     color: $pal-white;
 
     //background
-    @include parallax-bg(url('../img/index-aboutus-bg.jpg'));
+    @include parallax-bg(url('../img/index-contactus-bg.jpg'));
         background-blend-mode: multiply;
         background-color:$pal-white;
+
+    //margin
+    #contactContent {
+        @include media-breakpoint-down(sm) {
+                margin-bottom: 15em;
+            }
+    }
+
+    #contactManage {
+        font-family: $header-font;
+        color: $pal-color-a;
+
+        @include drop-shadow($pal-color-e);
+    }
+    #contactPress {
+        font-family: $header-font;
+        color: $pal-color-e;
+
+        @include drop-shadow($pal-color-c);
+    }
+    #contactBooking {
+        font-family: $header-font;
+        color: $pal-color-b;
+
+        @include drop-shadow($pal-color-e);
+    }
+    #contactMerchQ {
+        font-family: $header-font;
+        color: $pal-color-e;
+
+        @include drop-shadow($pal-color-a);
+    }
 }
 
 .albumStreamLinks {
