@@ -6,6 +6,9 @@
 $philpott-font: 'Limelight', cursive;
 $philpott-shadow-color: #000;
 
+$torsoraphy-font: 'Poller One', cursive;
+$rdchamber-font: 'Ranchers', cursive;
+
 $paragraph-font: 'Lexend Deca', sans-serif;
 $header-font: 'Righteous', cursive;
 
@@ -377,6 +380,153 @@ body {
             background-color: $pal-white;
             border-color:$pal-white;
             color:$pal-color-e;
+        }
+    }
+}
+
+//ALBUMS PAGE
+#albums {
+    //STYLE HEADERS (default)
+    h1 {
+        font-family: $header-font;
+        color: $pal-color-b;
+
+        @include drop-shadow($pal-color-e);
+
+        @include media-breakpoint-up(lg) {
+            font-size: 100px;
+        }
+
+        @include media-breakpoint-up(xs) {
+            font-size: 60px;
+        }
+    }
+
+    //STYLE PARAGRAPHS (default)
+    font-family: $paragraph-font;
+    color: $pal-white;
+    //STYLE BACKGROUND (default)
+    background-color: $pal-black; 
+
+    //style the album display jumbotrons
+    .jumbotron {
+
+        background-color: transparent;
+        margin: 0;
+        padding: 10px;
+
+        .img-fluid{
+            margin: 10px;
+            @include drop-shadow($pal-color-a);
+        }
+    }
+
+    #albumsPhilpott {
+        @include parallax-bg(url('../img/philpott-bg-1.jpg'));
+        background-blend-mode: multiply;
+        background-color:$pal-color-c;
+
+        #philpottCover {
+            @include drop-shadow($pal-color-a);
+
+        }
+
+        h1{
+            font-family: $philpott-font;
+            color: $pal-color-b;
+
+            // -webkit-text-stroke: 1px rgb(221, 190, 16);
+            @include drop-shadow($pal-color-a);
+
+            @include media-breakpoint-up(lg) {
+                font-size: 100px;
+            }
+
+            @include media-breakpoint-up(xs) {
+                font-size: 60px;
+            }
+        }
+
+        h2, h3 {
+            color: $pal-white;
+            @include drop-shadow($pal-color-e);
+            font-family: $paragraph-font;
+
+            span {
+                color: $pal-color-a;
+            }
+        }
+    }
+
+    #albumsTorsoraphy {
+        @include parallax-bg(url('../img/torsoraphy-bg.png'));
+        background-blend-mode: multiply;
+        background-color:$pal-color-a;
+
+        #torsoraphyCover {
+            @include drop-shadow($pal-color-d);
+
+        }
+
+        h1{
+            font-family: $torsoraphy-font;
+            color: $pal-color-c;
+
+            @include drop-shadow($pal-color-e);
+
+            @include media-breakpoint-up(lg) {
+                font-size: 80px;
+            }
+
+            @include media-breakpoint-up(xs) {
+                font-size: 40px;
+            }
+        }
+
+        h2, h3 {
+            color: $pal-white;
+            @include drop-shadow($pal-color-e);
+            font-family: $paragraph-font;
+
+            span {
+                color: $pal-color-a;
+            }
+        }
+    }
+
+    #albumsRdchamber {
+        @include parallax-bg(url('../img/rdchamber-bg.png'));
+        background-blend-mode: multiply;
+        background-color:$pal-color-b;
+
+        #rdchamberCover {
+            @include drop-shadow($pal-color-e);
+
+        }
+
+        h1{
+            font-family: $rdchamber-font;
+            color: $pal-color-a;
+
+            @include drop-shadow($pal-color-e);
+
+            @include media-breakpoint-up(lg) {
+                font-size: 80px;
+            }
+
+            @include media-breakpoint-up(xs) {
+                font-size: 40px;
+            }
+        }
+
+        h2, h3 {
+            color: $pal-white;
+            @include drop-shadow($pal-color-e);
+            font-family: $paragraph-font;
+
+            span {
+                color: $pal-color-a;
+            }
         }
     }
 }

@@ -286,6 +286,145 @@ body {
       border-color: #ffffff;
       color: #003D5B; }
 
+#albums {
+  font-family: "Lexend Deca", sans-serif;
+  color: #ffffff;
+  background-color: #000; }
+  #albums h1 {
+    font-family: "Righteous", cursive;
+    color: #EDAE49;
+    text-shadow: 0.3rem 0.2rem #003D5B;
+    font-size: 60px; }
+    #albums h1 button {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+    #albums h1 img {
+      box-shadow: 0.3rem 0.3rem #003D5B; }
+    @media (min-width: 992px) {
+      #albums h1 {
+        font-size: 100px; } }
+  #albums .jumbotron {
+    background-color: transparent;
+    margin: 0;
+    padding: 10px; }
+    #albums .jumbotron .img-fluid {
+      margin: 10px;
+      text-shadow: 0.3rem 0.2rem #D1495B; }
+      #albums .jumbotron .img-fluid button {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+      #albums .jumbotron .img-fluid img {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+  #albums #albumsPhilpott {
+    color: white;
+    background-image: url("../img/philpott-bg-1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #00798C; }
+    #albums #albumsPhilpott #philpottCover {
+      text-shadow: 0.3rem 0.2rem #D1495B; }
+      #albums #albumsPhilpott #philpottCover button {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+      #albums #albumsPhilpott #philpottCover img {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+    #albums #albumsPhilpott h1 {
+      font-family: "Limelight", cursive;
+      color: #EDAE49;
+      text-shadow: 0.3rem 0.2rem #D1495B;
+      font-size: 60px; }
+      #albums #albumsPhilpott h1 button {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+      #albums #albumsPhilpott h1 img {
+        box-shadow: 0.3rem 0.3rem #D1495B; }
+      @media (min-width: 992px) {
+        #albums #albumsPhilpott h1 {
+          font-size: 100px; } }
+    #albums #albumsPhilpott h2, #albums #albumsPhilpott h3 {
+      color: #ffffff;
+      text-shadow: 0.3rem 0.2rem #003D5B;
+      font-family: "Lexend Deca", sans-serif; }
+      #albums #albumsPhilpott h2 button, #albums #albumsPhilpott h3 button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #albums #albumsPhilpott h2 img, #albums #albumsPhilpott h3 img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #albums #albumsPhilpott h2 span, #albums #albumsPhilpott h3 span {
+        color: #D1495B; }
+  #albums #albumsTorsoraphy {
+    color: white;
+    background-image: url("../img/torsoraphy-bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #D1495B; }
+    #albums #albumsTorsoraphy #torsoraphyCover {
+      text-shadow: 0.3rem 0.2rem #30638E; }
+      #albums #albumsTorsoraphy #torsoraphyCover button {
+        box-shadow: 0.3rem 0.3rem #30638E; }
+      #albums #albumsTorsoraphy #torsoraphyCover img {
+        box-shadow: 0.3rem 0.3rem #30638E; }
+    #albums #albumsTorsoraphy h1 {
+      font-family: "Poller One", cursive;
+      color: #00798C;
+      text-shadow: 0.3rem 0.2rem #003D5B;
+      font-size: 40px; }
+      #albums #albumsTorsoraphy h1 button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #albums #albumsTorsoraphy h1 img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      @media (min-width: 992px) {
+        #albums #albumsTorsoraphy h1 {
+          font-size: 80px; } }
+    #albums #albumsTorsoraphy h2, #albums #albumsTorsoraphy h3 {
+      color: #ffffff;
+      text-shadow: 0.3rem 0.2rem #003D5B;
+      font-family: "Lexend Deca", sans-serif; }
+      #albums #albumsTorsoraphy h2 button, #albums #albumsTorsoraphy h3 button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #albums #albumsTorsoraphy h2 img, #albums #albumsTorsoraphy h3 img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #albums #albumsTorsoraphy h2 span, #albums #albumsTorsoraphy h3 span {
+        color: #D1495B; }
+  #albums #albumsRdchamber {
+    color: white;
+    background-image: url("../img/rdchamber-bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #EDAE49; }
+    #albums #albumsRdchamber #rdchamberCover {
+      text-shadow: 0.3rem 0.2rem #003D5B; }
+      #albums #albumsRdchamber #rdchamberCover button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #albums #albumsRdchamber #rdchamberCover img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+    #albums #albumsRdchamber h1 {
+      font-family: "Ranchers", cursive;
+      color: #D1495B;
+      text-shadow: 0.3rem 0.2rem #003D5B;
+      font-size: 40px; }
+      #albums #albumsRdchamber h1 button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #albums #albumsRdchamber h1 img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      @media (min-width: 992px) {
+        #albums #albumsRdchamber h1 {
+          font-size: 80px; } }
+    #albums #albumsRdchamber h2, #albums #albumsRdchamber h3 {
+      color: #ffffff;
+      text-shadow: 0.3rem 0.2rem #003D5B;
+      font-family: "Lexend Deca", sans-serif; }
+      #albums #albumsRdchamber h2 button, #albums #albumsRdchamber h3 button {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #albums #albumsRdchamber h2 img, #albums #albumsRdchamber h3 img {
+        box-shadow: 0.3rem 0.3rem #003D5B; }
+      #albums #albumsRdchamber h2 span, #albums #albumsRdchamber h3 span {
+        color: #D1495B; }
+
 #about {
   font-family: "Lexend Deca", sans-serif;
   color: #ffffff;

@@ -1,38 +1,47 @@
 {
-  "name": "projectmountweazel",
-  "version": "1.0.0",
-  "description": "This is a homepage for a fictional band called Mountweazel, it's a portfolio project by Jaden Eckel.",
-  "main": "index.html",
-  "scripts": {
-    "lite": "lite-server",
-    "scss": "node-sass -o css/ css/",
-    "start": "npm run watch:all",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/geno7/mountweazel.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/geno7/mountweazel/issues"
-  },
-  "homepage": "https://github.com/geno7/mountweazel#readme",
-  "devDependencies": {
-    "lite-server": "^2.5.4",
-    "node-sass": "^4.14.1",
-    "onchange": "^7.0.0",
-    "parallelshell": "3.0.1"
-  },
-  "dependencies": {
-    "bootstrap": "^4.5.2",
-    "bootstrap-select-country": "^4.2.0",
-    "fitty": "^2.3.3",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
-  }
+    "name": "projectmountweazel",
+    "version": "1.0.0",
+    "description": "This is a homepage for a fictional band called Mountweazel, it's a portfolio project by Jaden Eckel.",
+    "main": "index.html",
+    "scripts": {
+        "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+        "clean": "rimraf dist",
+        "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+        "imagemin": "imagemin img/* -o dist/img",
+        "lite": "lite-server",
+        "scss": "node-sass -o css/ css/",
+        "start": "npm run watch:all",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin albums.html -d dist --htmlmin -o dist/albums.html && usemin merch.html -d dist --htmlmin -o dist/merch.html ",
+        "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+        "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/geno7/mountweazel.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/geno7/mountweazel/issues"
+    },
+    "homepage": "https://github.com/geno7/mountweazel#readme",
+    "devDependencies": {
+        "copyfiles": "^2.2.0",
+        "imagemin-cli": "^5.1.0",
+        "lite-server": "^2.6.1",
+        "node-sass": "^4.14.1",
+        "onchange": "^7.0.0",
+        "parallelshell": "3.0.1",
+        "rimraf": "^3.0.2",
+        "usemin-cli": "^0.6.0"
+    },
+    "dependencies": {
+        "bootstrap": "^4.5.2",
+        "bootstrap-select-country": "^4.2.0",
+        "fitty": "^2.3.3",
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.5.1",
+        "popper.js": "^1.16.1"
+    }
 }
